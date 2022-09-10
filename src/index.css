@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600&display=swap');
+
+body {
+    background-image: url('./Images/background.png');
+    background-color: "#E9E9E9";
+    background-position: center;
+    background-repeat: repeat-y;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.font-anton {
+    font-family: 'Anton', sans-serif;
+}
+
+.font-archivo {
+    font-family: 'Archivo', sans-serif;
+}
+
+
+.underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    /* bottom: 0; */
+    left: 0;
+    top:1.5rem;
+    background-color: #393939;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@keyframes waves {
+    from {
+        top:-25%;
+    }
+    to {
+        top: 0;
+    }
+
+}
+
+/* UNCOMMENT to start this animation */
+
+/* .wave-animation {
+    animation: waves 0.8s linear infinite;
+} */
