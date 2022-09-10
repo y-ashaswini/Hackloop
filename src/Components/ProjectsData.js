@@ -2,7 +2,7 @@ import ProjectsList from "./ProjectsList";
 
 export default function ProjectsData() {
     const list_2019 = [
-        {id: 1, name: "PROJECT NAME ONE", linkjump:"@"},
+        {id: 1, name: "PROJECT NAME ONE", linkjump:"/Projects/Projects2019"},
         {id: 2, name: "PROJECT NAME TWO", linkjump:"@"},
         {id: 3, name: "PROJECT NAME THREE", linkjump:"@"},
         {id: 4, name: "PROJECT NAME FOUR", linkjump:"@"},

@@ -1,4 +1,5 @@
 import logo from '../Images/logo.png';
+import waves from "../Images/waves.png";
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
@@ -13,6 +14,8 @@ export default function Navbar() {
                     ABOUT
                 </Link>
             </div>
+
+            <img src={waves} alt="Waves" className="absolute top-0 wave-animation h-[150vh] right-[3rem]"/>
         </div>
     )
 }
