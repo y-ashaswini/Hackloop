@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@700;800;900&display=swap');
 
 body {
     background-image: url('./Images/background.png');
@@ -50,7 +51,7 @@ body {
 
 @keyframes waves {
     from {
-        top:-25%;
+        top:-10vh;
     }
     to {
         top: 0;
@@ -59,7 +60,7 @@ body {
 }
 
 /* UNCOMMENT to start this animation */
-
-/* .wave-animation {
+/* 
+.wave-animation {
     animation: waves 0.8s linear infinite;
 } */
